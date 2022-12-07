@@ -5,11 +5,14 @@
         <!-- import CSS styles -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap.min.css">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <meta name="description" content="assignment write up">
     </head>
 
     <body>
         <!-- code adapted from jeff's bootstrap video -->
+        <a id = "back" href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-left"> back to portfolio</i></a>
         <div class="d-flex flex-column justify-content-center align-items-center" id = "title">
             <h1>Washing Machine Personas & Storyboarding</h1>
             <p class = "text-secondary"> An investigation into the trials, tribulations, and triumphs of the public laundry users in Providence, RI</p>
@@ -17,7 +20,7 @@
         <div id="part 1" class="container-fluid justify-content-center align-items-center">
             <div class="row align-items-center py-3 py-sm-5 px-3 px-sm-5 mx-xl-5">
                 <div class="col">
-                    <h3>Diagram</h3>
+                    <h2>Diagram</h2>
                     <p>This washing machine interface gives a way to interact with the machine to adjust wash settings and begin washing clothes. In order to start the machine, the clothes should be loaded in, coins have to be entered in the coin slot, the knobs should be used to select a cycle and temperature, and the start button has to be pressed. Once the machine is started, the IN USE indicator light will turn on, and the indicator lights for the cycle steps will each turn. When the wash cycle is done, the DONE light will stay on until the top lid is opened to take clothes out.</p>
                 </div>
                 <div class="col">
@@ -88,6 +91,20 @@
             <p class = "text-secondary">A deeper dive into Fashionable Francine and her journey to clean her shirt</p>
             <div class="storyboard-container">
                 <img class="storyboard-item" src="storyboard.png" alt="storyboard" style="height: 42rem;">
-        </div>              
+        </div>  
+        
+          <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("back").style.top = "18px";
+      } else {
+        document.getElementById("back").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    
     </body>
 </html>
