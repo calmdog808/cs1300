@@ -1,6 +1,8 @@
 h1, h2{
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    font-weight: bold !important;
+    
 }
 
 .back-to-top {
